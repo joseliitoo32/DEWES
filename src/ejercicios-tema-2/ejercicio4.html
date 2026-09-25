@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 4</title>
+</head>
+
+<body onload="ej4()">
+
+<script>
+    var sueldo = prompt("Dime tu sueldo");
+    var old = prompt("Dime tu antigüedad");
+
+
+    function ej4() {
+        if (sueldo < 750 && old <= 10) {
+            sueldo = sueldo * 1.1;
+            alert("Sueldo actualizado: " + sueldo);
+        } else if (sueldo >= 750 && old <= 10) {
+            sueldo = sueldo * 1.05;
+            alert("Sueldo actualizado: " + sueldo);
+        } else {
+            alert("El sueldo no obtiene prima");
+        }
+    }
+
+
+
+
+</script>
+
+</body>
+
+</html>
