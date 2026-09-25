@@ -3,23 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Ejercicio 2 y 3</title>
+    <title>Ejercicio 2</title>
 
 </head>
-
 
 <body onload="ej2()">
 
 <script>
+    var num1 = prompt("Dime un número");
 
-    // Crear funcion para guardar los datos de entrada
-    var hijos = prompt("¿Número de hijos?")
+
+
 
     // Crear funcion para coger los datos de la variable y escribirla atraves de la funcion
     function ej2() {
-        alert("Tienes " + hijos + " hijos");
+        if (num1 % 2 == 0) {
+            alert("El número es par");
+        }
+        else {
+            alert("El número es impar")
+        }
     }
-
 </script>
 
 </body>
