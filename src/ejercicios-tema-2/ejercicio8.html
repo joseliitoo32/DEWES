@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 8</title>
+</head>
+
+<body onload="ej8()">
+
+<script>
+    var num = Number(prompt("Dime un número"));
+
+    function ej8() {
+
+        var resultado = "";
+        var divisor = 2;
+
+        while (num > 1) {
+
+            if (num % divisor == 0) {
+                resultado = resultado + divisor + " * ";
+                num = num / divisor;
+            }
+            else {
+                divisor++;
+            }
+        }
+
+        alert(resultado);
+    }
+</script>
+
+</body>
+
+</html>
