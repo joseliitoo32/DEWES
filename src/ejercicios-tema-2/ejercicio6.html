@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 6</title>
+</head>
+
+<body onload="ej6()">
+
+<script>
+    var a = Number(prompt("Dime el valor de a"));
+    var b = Number(prompt("Dime el valor de b"));
+    var c = Number(prompt("Dime el valor de c"));
+
+    function ej6() {
+
+        var resultado = b * b - 4 * a * c;
+
+        if (resultado > 0) {
+            var x1 = (-b + Math.sqrt(resultado)) / (2 * a);
+            var x2 = (-b - Math.sqrt(resultado)) / (2 * a);
+
+            alert("x1 = " + x1 + " - x2 = " + x2);
+        }
+        else if (resultado == 0) {
+            var x1 = -b / (2 * a);
+
+            alert("x1 = x2 = " + x1);
+        }
+        else {
+            alert("No tiene soluciones");
+        }
+    }
+</script>
+
+</body>
+
+</html>
